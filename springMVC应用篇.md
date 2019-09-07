@@ -83,6 +83,9 @@ class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 <property name="suffix" value=".jsp"></property>
 </bean>
 <!-- 设置静态资源不过滤 -->
+1. location元素表示webapp目录下的包下的所有文件
+2. mapping元素表示以/static开头的所有请求路径，如/static/a 或者/static/a/b
+
 <mvc:resources location="/css/" mapping="/css/**"/> <!-- 样式 -->
 <mvc:resources location="/images/" mapping="/images/**"/> <!-- 图片 -->
 <mvc:resources location="/js/" mapping="/js/**"/> <!-- javascript -->
