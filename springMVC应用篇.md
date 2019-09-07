@@ -82,6 +82,10 @@ class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 <property name="prefix" value="/WEB-INF/pages/"></property>
 <property name="suffix" value=".jsp"></property>
 </bean>
+<!-- 设置静态资源不过滤 -->
+<mvc:resources location="/css/" mapping="/css/**"/> <!-- 样式 -->
+<mvc:resources location="/images/" mapping="/images/**"/> <!-- 图片 -->
+<mvc:resources location="/js/" mapping="/js/**"/> <!-- javascript -->
 <!-- 配置spring开启注解mvc的支持
 <mvc:annotation-driven></mvc:annotation-driven>-->
 </beans>
