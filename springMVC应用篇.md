@@ -116,6 +116,7 @@ class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 <h3>入门成功！！</h3>
 </body>
 ```
+springmvc中model对象是request级别
 ##springmvc执行流程
 ![123](./image/springmvc执行流程原理.jpg)
 ### DispatcherServlet：前端控制器
